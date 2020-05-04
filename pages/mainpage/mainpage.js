@@ -1,9 +1,18 @@
 //Page Object
 Page({
   data: {
+    currentIndexNav: 0,
     //main page navigator data
     navList: [],
   },
+
+  //点击首页导航按钮
+  activeNav(e) {
+    this.setData({
+      currentIndexNav: e.target.dataset.index,
+    });
+  },
+
   // 获取首页导航数据
   getNavList() {
     let that = this;

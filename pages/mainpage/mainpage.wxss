@@ -1,4 +1,7 @@
 /* pages/mainpage/mainpage.wxss */
+page {
+  color: #666;
+}
 
 .nav-wrap {
 }
@@ -12,4 +15,8 @@
   padding: 20rpx 45rpx;
   font-size: 30rpx;
   display: inline-block;
+}
+
+.nav-item.active {
+  border-bottom: 5rpx solid #de688b;
 }
