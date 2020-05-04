@@ -1,1 +1,15 @@
 /* pages/mainpage/mainpage.wxss */
+
+.nav-wrap {
+}
+
+.nav {
+  white-space: nowrap;
+  padding: 5rpx 0;
+}
+
+.nav-item {
+  padding: 20rpx 45rpx;
+  font-size: 30rpx;
+  display: inline-block;
+}
