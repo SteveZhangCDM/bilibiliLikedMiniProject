@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "pageTitle": "../../components/pageTitle/pageTitle"
+  },
   "navigationBarTitleText": "Faked Bilibili"
 }

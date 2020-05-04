@@ -1,1 +1,4 @@
 <!-- pages/mainpage/mainpage.wxml -->
+<view class="main">
+    <pageTitle></pageTitle>
+</view>

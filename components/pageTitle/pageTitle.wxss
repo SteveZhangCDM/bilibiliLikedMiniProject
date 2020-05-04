@@ -1,1 +1,37 @@
 /* components/pageTitle/pageTitle.wxss */
+.pageTitle {
+  display: flex;
+  align-items: center;
+  padding: 10rpx;
+  background-color: white;
+}
+
+.logo {
+  flex: 7;
+}
+
+.search-icon {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-icon {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.downloadapp-btn {
+  flex: 3;
+  font-size: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #23ade5;
+  color: white;
+  border-radius: 10rpx;
+  padding: 10rpx;
+}

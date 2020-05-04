@@ -1,2 +1,17 @@
-<!--components/pageTitle/pageTitle.wxml-->
-<text>components/pageTitle/pageTitle.wxml</text>
+<!-- components/pageTitle/pageTitle.wxml -->
+<view class="pageTitle">
+    <!-- logo -->
+    <navigator class="logo">
+        <van-image width="120" height="60" src="https://static.seekingalpha.com/uploads/2020/3/4/saupload_bilibili-Header-001-20171010.jpg" class="logo-img" />
+    </navigator>
+    <!-- search -->
+    <view class="search-icon">
+        <van-icon name="search" color="grey" size="23" />
+    </view>
+    <!-- user -->
+    <view class="user-icon">
+        <van-icon name="user-circle-o" color="grey" size="23" />
+    </view>
+    <!-- button -->
+    <view class="downloadapp-btn">Download</view>
+</view>
