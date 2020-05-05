@@ -1,6 +1,7 @@
 /* pages/mainpage/mainpage.wxss */
 page {
   color: #666;
+  padding: 10rpx;
 }
 
 .nav-wrap {
@@ -19,4 +20,21 @@ page {
 
 .nav-item.active {
   border-bottom: 5rpx solid #de688b;
+}
+
+.slides {
+  margin-top: 10rpx;
+}
+.slides swiper {
+  height: 220rpx;
+}
+
+.slides navigator {
+  width: 100%;
+  height: 100%;
+}
+
+.slides image {
+  width: 100%;
+  height: 100%;
 }

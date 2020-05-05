@@ -4,6 +4,7 @@ Page({
     currentIndexNav: 0,
     //main page navigator data
     navList: [],
+    swiperList: [],
   },
 
   //点击首页导航按钮
@@ -30,10 +31,28 @@ Page({
       },
     });
   },
+  //get the data of swiperList
+  getSwiperList() {
+    let that = this;
+    wx.request({
+      url:
+        'https://mockapi.eolinker.com/7b7NMB9c75d613bc39c8f16e4e03a3d4a8f951750079dc5/swiper',
+      success(res) {
+        console.log(res);
+        if (res.data.code === 0) {
+          that.setData({
+            swiperList: res.data.data.swiperList,
+          });
+        }
+      },
+    });
+  },
+
   //options(Object)
   onLoad: function (options) {
     //获取首页导航数据
     this.getNavList();
+    this.getSwiperList();
   },
   onReady: function () {},
   onShow: function () {},
