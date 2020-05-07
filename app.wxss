@@ -1,4 +1,4 @@
-@import 'styles/font-awesome.wxss';
+@import 'styles/fontawesome.min.wxss';
 
 page,
 view,
