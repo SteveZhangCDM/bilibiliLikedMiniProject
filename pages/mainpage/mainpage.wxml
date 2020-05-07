@@ -24,10 +24,16 @@
     <view class="video-wrap">
         <navigator class="video-item" wx:for="{{videoList}}" wx:key="{{index}}">
             <view class="video-img">
-                <image src="{{item.imgSrc}}"></image>
+                <image src="{{item.imgSrc}}" mode="widthFix"></image>
                 <view class="video-info">
-                    <view class="play-count"></view>
-                    <view class="comment-count"></view>
+                    <view class="play-count-wrap">
+                        <!-- <text class="fa fa-play-circle-o"></text> -->
+                        <text class="play-count">Play:{{item.playCount}}</text>
+                    </view>
+                    <view class="comment-count-wrap">
+                        <!-- <text class="fa fa-commenting-o"></text> -->
+                        <text class="comment-count">Comment:{{item.commentCount}}</text>
+                    </view>
                 </view>
             </view>
             <view class="video-title">{{item.desc}}</view>
