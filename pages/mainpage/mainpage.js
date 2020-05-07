@@ -5,6 +5,7 @@ Page({
     //main page navigator data
     navList: [],
     swiperList: [],
+    videoList: [],
   },
 
   //点击首页导航按钮
@@ -22,7 +23,7 @@ Page({
       url:
         'https://mockapi.eolinker.com/7b7NMB9c75d613bc39c8f16e4e03a3d4a8f951750079dc5/navList',
       success(res) {
-        console.log(res);
+        // console.log(res);
         if (res.data.code === 0) {
           that.setData({
             navList: res.data.data.navList,
@@ -38,10 +39,25 @@ Page({
       url:
         'https://mockapi.eolinker.com/7b7NMB9c75d613bc39c8f16e4e03a3d4a8f951750079dc5/swiper',
       success(res) {
-        console.log(res);
+        // console.log(res);
         if (res.data.code === 0) {
           that.setData({
             swiperList: res.data.data.swiperList,
+          });
+        }
+      },
+    });
+  },
+  //get video list
+  getVideoList() {
+    let that = this;
+    wx.request({
+      url: 'http://mock-api.com/mnEe4VnJ.mock/videoList',
+      success(res) {
+        console.log(res);
+        if (res.data.code === 0) {
+          that.setData({
+            videoList: res.data.data.videoList,
           });
         }
       },
@@ -53,6 +69,7 @@ Page({
     //获取首页导航数据
     this.getNavList();
     this.getSwiperList();
+    this.getVideoList();
   },
   onReady: function () {},
   onShow: function () {},

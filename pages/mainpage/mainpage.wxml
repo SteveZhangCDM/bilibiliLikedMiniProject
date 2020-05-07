@@ -20,4 +20,17 @@
             </swiper-item>
         </swiper>
     </view>
+    <!-- VIDEO LIST -->
+    <view class="video-wrap">
+        <navigator class="video-item" wx:for="{{videoList}}" wx:key="{{index}}">
+            <view class="video-img">
+                <image src="{{item.imgSrc}}"></image>
+                <view class="video-info">
+                    <view class="play-count"></view>
+                    <view class="comment-count"></view>
+                </view>
+            </view>
+            <view class="video-title">{{item.desc}}</view>
+        </navigator>
+    </view>
 </view>
